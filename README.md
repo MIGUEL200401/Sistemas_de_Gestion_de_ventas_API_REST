@@ -300,17 +300,3 @@ ventas_api/
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## Git Flow
-
-```
-master   ──── versiones estables y finales (tags)
-  │
-develop  ──── desarrollo principal
-  │
-release  ──── versión candidata antes de pasar a master
-  │
-feature/ ──── ramas de funcionalidades (se fusionan a develop)
-```
