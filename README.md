@@ -131,12 +131,12 @@ SECRET_KEY=tu-clave-secreta-aqui
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 
-DB_NAME=ventas_db
-DB_USER=postgres
-DB_PASSWORD=tu_password
-DB_HOST=localhost
-DB_PORT=5432
-DB_SCHEMA=ventas_schema
+DB_NAME=xxxxxxxxx
+DB_USER=xxxxxxxxx
+DB_PASSWORD=xxxxx
+DB_HOST=xxxxxxxxx
+DB_PORT=xxxxxxxxx
+DB_SCHEMA=xxxxxxx
 ```
 
 ### 5. Crear la base de datos en PostgreSQL
