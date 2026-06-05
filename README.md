@@ -124,21 +124,6 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Editar `.env` con tus credenciales:
-
-```env
-SECRET_KEY=tu-clave-secreta-aqui
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
-
-DB_NAME=ventas_db
-DB_USER=postgres
-DB_PASSWORD=tu_password
-DB_HOST=localhost
-DB_PORT=5432
-DB_SCHEMA=ventas_schema
-```
-
 ### 5. Crear la base de datos en PostgreSQL
 
 ```sql
@@ -315,43 +300,3 @@ ventas_api/
 ├── requirements.txt
 └── README.md
 ```
-
----
-
-## Git Flow
-
-```
-master   ──── versiones estables y finales (tags)
-  │
-develop  ──── desarrollo principal
-  │
-release  ──── versión candidata antes de pasar a master
-  │
-feature/ ──── ramas de funcionalidades (se fusionan a develop)
-```
-
-### Comandos básicos
-
-```bash
-# Clonar y configurar ramas
-git checkout -b develop
-git checkout -b release
-
-# Crear rama de feature
-git checkout develop
-git checkout -b feature/crud-clientes
-
-# Fusionar feature a develop
-git checkout develop
-git merge feature/crud-clientes
-
-# Preparar release
-git checkout -b release
-git merge develop
-
-# Pasar a master
-git checkout master
-git merge release
-git tag -a v1.0.0 -m "Primera versión estable"
-```
-
