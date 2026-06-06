@@ -118,18 +118,12 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Configurar variables de entorno
-
-```bash
-cp .env.example .env
-```
-
 Editar `.env` con tus credenciales:
 
 ```env
-SECRET_KEY=tu-clave-secreta-aqui
+
 DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
+
 
 DB_NAME=xxxxxxxxx
 DB_USER=xxxxxxxxx
@@ -139,7 +133,7 @@ DB_PORT=xxxxxxxxx
 DB_SCHEMA=xxxxxxx
 ```
 
-### 5. Crear la base de datos en PostgreSQL
+### 4. Crear la base de datos en PostgreSQL
 
 ```sql
 -- En psql como superusuario:
@@ -148,26 +142,26 @@ CREATE DATABASE ventas_db;
 CREATE SCHEMA ventas_schema;
 ```
 
-### 6. Crear carpeta de logs
+### 5. Crear carpeta de logs
 
 ```bash
 mkdir logs
 ```
 
-### 7. Ejecutar migraciones
+### 6. Ejecutar migraciones
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 8. Crear superusuario
+### 7. Crear superusuario
 
 ```bash
 python manage.py createsuperuser
 ```
 
-### 9. (Opcional) Crear grupos de roles
+### 8. (Opcional) Crear grupos de roles
 
 ```bash
 python manage.py shell
